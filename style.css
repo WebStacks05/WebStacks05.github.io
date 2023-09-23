@@ -1,0 +1,409 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+}
+::-webkit-scrollbar-thumb {
+  background: #ffd700; 
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2a500; 
+}
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  body {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color:#ffffff;
+    border-width: 5px;
+    border-bottom: solid 5px gold;
+    z-index: 4;
+    position: sticky;
+  }
+  #navbar span {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navbar a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navbar img {
+    float: left;
+    height: 70px;
+    align-items: center;
+  }
+  #navbar img.side {
+    float: right;
+    height: 70px;
+    align-items: center;
+    padding: 5px;
+  }
+
+  #navbar h4 {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+  }
+
+  #navbar a:hover {
+    background-color: #dadada;
+    color: #000000;
+  }
+  
+  #navbar a.active {
+    color: #0073ff;
+    font-size: large;
+  }
+  #navbar a.btn {
+    float: right;
+    text-align: center;
+    margin-top: 15px;
+    margin-left:3px;
+    margin-right: 3px;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-decoration: none;
+  }
+
+  a.btn {
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: gold;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .content1 {
+    padding: 16px;
+    color:#000000;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .content2 {
+    padding: 16px;
+    color:#000000;
+    background-color: #d1d1d1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content3 {
+    padding: 16px;
+    color:#000000;
+    background-color: #7ec1ff;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content4 {
+    padding: 16px;
+    color:#000000;
+    background-color: #a9d4fc;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img1 {
+    margin-left:25%;
+    margin-top:17%;
+    margin-bottom:15%;
+  }
+  .img2 {
+    margin-left:8%;
+    margin-top:17%;
+    margin-bottom:8%;
+  }
+
+  .lebox1 {
+    margin-left: 8%;
+    margin-top: 13%;
+    margin-bottom: 13%;
+    background-color:#ffffff;
+    width: 30%;
+    text-align: center; 
+    padding: 15px;
+    font-family: "Arial Narrow", sans-serif;
+    border: solid 5px gold;
+    border-radius: 4px;
+  }
+  .lebox1 h3 {font-family: "Oswald", sans-serif;}
+  .lebox2 {
+    margin-left: 17%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    background-color:#d1d1d1;
+    width: 40%;
+    text-align: right; 
+    padding: 15px; 
+    font-family: "Montserrat", sans-serif;
+    border-radius: 4px;
+  }
+  .lebox2 h3 {font-family: "Oswald", sans-serif;}
+  .lebox3 {
+    margin-left: 5%;
+    margin-top: 13%;
+    margin-bottom: 13%;
+    background-color:#7ec1ff;
+    color:#2a63a8;
+    width: 30%;
+    text-align: center; 
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 4px;
+  }
+  .lebox3 h2 {font-family: "Kanit", sans-serif;}
+  .lebox4 {
+    margin-left: 17%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-color: #7ec1ff;
+    color: #2b4a70;
+    width: 40%;
+    text-align: right; 
+    padding: 15px; 
+    font-family: "Montserrat", sans-serif;
+    border-radius: 4px;
+  }
+  .lebox4 h3 {font-family: "Oswald", sans-serif;}
+  .lebox5 {
+    margin-left: 5%;
+    margin-top: 13%;
+    margin-bottom: 13%;
+    background-color: #a9d4fc;
+    color: #2b4a70;
+    width: 40%;
+    text-align: right; 
+    padding: 15px; 
+    font-family: "Montserrat", sans-serif;
+    border-radius: 4px;
+  }
+
+  #plans {
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #plans h2 {
+    border: solid 5px gold;
+    padding: 5px;
+  }
+  #plans div.box {
+    margin-top: 4%;
+    background-color: #0073ff;
+    color: white;
+    padding: 18px;
+    width: 60%;
+    margin-bottom: 3%;
+  }
+  #plans div.box:hover {
+    margin-top: 4%;
+    background-color: #00b7ff;
+    color: white;
+    padding: 18px;
+    width: 60%;
+    margin-bottom: 3%;
+  }
+  #plans div.box h4 {
+    border: solid 3px #ffffff;
+    padding: 5px;
+  }
+  #plans div.box h3 {
+    border-bottom: solid 4px gold;
+    padding: 5px;
+  }
+  #plans div.box a {
+    color: #00eaff;
+    text-decoration: none;
+  }
+
+  .foot {
+    overflow:hidden; 
+    background-color:black;
+    text-decoration: none; 
+    padding: 5px;
+  }
+  .foot a {
+    color:#00b7ff;
+    text-decoration: none;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+.Mcontent1 {
+  padding: 16px;
+  color:#000000;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+.Mcontent2 {
+  padding: 16px;
+  color:#000000;
+  background-color: #d1d1d1;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.Mcontent3 {
+  padding: 16px;
+  color:#000000;
+  background-color: #7ec1ff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  color:#2a63a8;
+}
+
+.Mlebox1 {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  margin-top: 13%;
+  margin-bottom: 13%;
+  background-color:#ffffff;
+  width: 55%;
+  text-align: center; 
+  padding: 15px;
+  font-family: 'Arial Narrow';
+  border: solid 5px gold;
+  border-radius: 4px;
+}
+.Mlebox2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4%;
+  background-color:#d1d1d1;
+  width: 90%;
+  text-align: center; 
+  padding: 15px; 
+  font-family: 'Arial Narrow';
+  border-radius: 4px;
+}
+.Mlebox3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  margin-top: 4%;
+  background-color:#7ec1ff;
+  color:#2a63a8;
+  width: 100%;
+  text-align: center; 
+  padding: 15px;
+  font-family: 'Arial Narrow';
+  font-size: 25px;
+  border-radius: 4px;
+}
+.Mlebox4 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: #7ec1ff;
+  color: #2b4a70;
+  width: 90%;
+  text-align: center; 
+  padding: 15px; 
+  font-family: 'Arial';
+  border-radius: 4px;
+}
+
+.Mimg1 {
+  margin-left:auto;
+  margin-right: auto;
+  align-self:center;
+  margin-top:17%;
+  margin-bottom:15%;
+}
+.Mimg2 {
+  margin-left:auto;
+  margin-right: auto;
+  align-self:center;
+  margin-top:17%;
+  margin-bottom:8%;
+}
+
+  
