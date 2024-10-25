@@ -1,244 +1,30 @@
-<!DOCTYPE html>
 <html>
-<title>Arcade Alliance Hosting</title>
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="WebStacks' Personal Website">
-<meta name="author" content="WebStacks05">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="https://kit.fontawesome.com/d197c41385.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<link rel="icon" href="assets/logo.png">
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>WebStacks</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Poppins|Rubik|Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-</head>
-
-<script> 
-  document.addEventListener('DOMContentLoaded', function () {
-    const Nav1 = document.getElementById('nav1');
-    const Nav2 = document.getElementById('nav2');
-    Nav1.classList.add('visible');
-    
-    // Listen for scroll events
-    window.addEventListener('scroll', function () {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      
-      if (currentScroll > Nav1.offsetHeight) {
-        // User scrolled past the primary navbar's height
-        Nav2.classList.add('visible');
-        Nav1.classList.remove('visible');
-      } else {
-        // User is at the top of the page
-        Nav2.classList.remove('visible');
-        Nav1.classList.add('visible');
-      }
-    });
-  }); 
-  
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-  </script>
-
-<body onload="initFunction()">
-<nav id="nav1">
-  <img src="assets/logo.png">
-  <h4>Arcade Alliance Hosting</h4>
-  <div class="hidden-mobile">
-  <a href="#">Support</a>
-  <a href="#plans">Plans</a>
-  <a class="active" href="index.html">Home</a>
-  </div>
-  <div><a class="btn" href="#">Login</a></div>
-  <span class="shown-mobile" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-</nav> 
-<div id="nav2">
-  <img src="assets/logo.png">
-  <h4>Arcade Alliance Hosting</h4>
-  <span class="shown-mobile" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-  <a class="btn" href="#">Login</a>
-  <div class="hidden-mobile">
-  <a href="#">Support</a>
-  <a href="#plans">Plans</a>
-  <a class="active" href="index.html">Home</a>
-  </div>
-</div>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a class="active" href="index.html">Home</a>
-  <a href="#plans">Plans</a>
-  <a href="#">Support</a>
-</div>
-
-<div class="content1">
-  <div style="display:flex;"><div class="web-box1">
-    <h2>I'm Web.</h2>
-    <a href="#" class="bun">Get Started</a>
-  </div> </div>
-  <div id="particles-js"></div>
-</div>
-
-<div class="content2">
-  <br>
-<h2>About Me</h2>
-<p>I'm a Programmer, Web Developer. </p>
-</div>
-
-<div class="content3">
-  <div data-aos="slide-left"><div class="web-box2">
-    <i class="fas fa-clock"></i>
-    <h4>100% Uptime</h4>
-  </div></div>
-  <div data-aos="slide-up"><div class="web-box2">
-    <i class="fas fa-lock"></i>
-    <h4>Secure</h4></div>
-  </div>
-  <div data-aos="slide-right"><div class="web-box2"> 
-    <i class="fas fa-headset"></i>
-    <h4>Friendly Suport</h4></div>
-  </div>
-</div>
-
-<footer class="dark-footer">
-    <div class="footer-bottom">
-      <div class="company-info">
-          <p>&copy; 2024 Arcade Alliance Hosting</p>
-      </div>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="https://discordapp.com/users/933660059945299978"><i class="fab fa-discord"></i></a>
-        <a href="#"><i class="fas fa-envelope"></i></a>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <!-- Initialize AOS -->
-  <script>
-    AOS.init({
-    offset: 120, // Offset in pixels
-    delay: 100,    // Delay in milliseconds
-    duration: 800, // Duration in milliseconds
-    easing: 'ease-in-out', // Easing function
-    once: true,  // Whether animation should happen only once
-});
-  </script>
-
-
-  <script>
-    particlesJS('particles-js', {
-  particles: {
-    number: {
-      value: 80, // Number of particles
-      density: {
-        enable: true,
-        value_area: 800 // Particle density
-      }
-    },
-    color: {
-      value: '#FF784B' // Particle color
-    },
-    shape: {
-      type: 'circle', // Shape type (circle, edge, triangle, polygon, star)
-      stroke: {
-        width: 0,
-        color: '#000000'
-      }
-    },
-    opacity: {
-      value: 0.5, // Particle opacity
-      random: false,
-      anim: {
-        enable: false,
-        speed: 1,
-        opacity_min: 0.1,
-        sync: false
-      }
-    },
-    size: {
-      value: 3, // Particle size
-      random: true,
-      anim: {
-        enable: false,
-        speed: 40,
-        size_min: 0.1,
-        sync: false
-      }
-    },
-    line_linked: {
-      enable: true, // Connect particles with lines
-      distance: 150, // Distance for connections
-      color: '#ffffff',
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true, // Enable particle movement
-      speed: 2, // Speed of particle movement
-      direction: 'none', // Move direction (none, top, top-right, right, etc.)
-      random: false,
-      straight: false, // If true, particles move in a straight line
-      out_mode: 'out', // What happens when particles reach the edge (out, bounce)
-      bounce: false,
-      attract: {
-        enable: false,
-        rotateX: 600,
-        rotateY: 1200
-      }
-    }
-  },
-  interactivity: {
-    detect_on: 'canvas', // Interactivity mode (canvas, window)
-    events: {
-      onhover: {
-        enable: true, // Enable on-hover effects
-        mode: 'repulse' // What happens on hover (grab, bubble, repulse)
-      },
-      onclick: {
-        enable: true, // Enable on-click effects
-        mode: 'push' // What happens on click (push, remove, bubble, repulse)
-      },
-      resize: true
-    },
-    modes: {
-      grab: {
-        distance: 400,
-        line_linked: {
-          opacity: 1
-        }
-      },
-      bubble: {
-        distance: 400,
-        size: 40,
-        duration: 2,
-        opacity: 8,
-        speed: 3
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4
-      },
-      push: {
-        particles_nb: 4
-      },
-      remove: {
-        particles_nb: 2
-      }
-    }
-  },
-  retina_detect: true // High-DPI mode
-});
-
-  </script>
-</body>
+  </head>
+  <style>
+    .web-box1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  width: 720px;
+  text-align: center; 
+  display: block;
+  font-family: "Kanit", sans-serif;
+  font-size: 22px;
+}
+.web-box1 h2 {
+  color: #ffffff; 
+  text-shadow: 2px 2px 8px #00000088;
+  font-family: "Poppins", sans-serif;
+  font-size: 70px; 
+  padding: 0px;
+}
+  </style>
+  <body style = "background: linear-gradient(to right, #243B55, #141E30);">
+    <div class="web-box1"> <h2 >I'm too lazy to make this Website [WIP]</h2> </div>
+  </body>
 </html>
