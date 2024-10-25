@@ -1,61 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>DynaCore Cloud</title>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="WebStacks' Personal Website">
-    <meta name="author" content="WebStacks">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStacks</title>
-    <link rel="icon" href="weblogo.png">
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+<meta charset="UTF-8">
+<meta name="description" content="Best Hosting Solution">
+<meta name="keywords" content="affordable, hosting, server, cloud, cheap, free, web hosting, game hosting">
+<meta name="author" content="WebStacks05">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://kit.fontawesome.com/d197c41385.js" crossorigin="anonymous"></script>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Poppins|Rubik|Raleway">
 </head>
+
 <body>
-    <header id="navbar">
-        <img src="weblogo.png"><a class="active" href="index.html">WebStacks</a>
-        <a href="projects.html">Projects</a></li>
-        <a href="literature.html">Literature</a></li>
-        <a href="#contact">Contact</a></li>
-    </header>
-    <script>
-        window.onload = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-    </script>
+<div id="navbar">
+  <img src="assets/logo.png">
+  <h4>DynaCore</h4>
+  <span class="shown-mobile" style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+  <a class="btn" href="https://panel.dynacore.cloud/login">Login</a>
+  <div class="hidden-mobile">
+  <a href="https://mail.google.com/mail/u/0/?fs=1&to=support@dynacore.cloud&tf=cm">Support</a>
+  <a href="#plans">Plans</a>
+  <a class="active" href="index.html">Home</a>
+  </div>
+</div>
 
-    <div class="topp">
-      <br>
-    <div class="lebox1">
-      <h2>I'm Web</h2>
-    </div>
-    <br>
-    </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="active" href="index.html">Home</a>
+  <a href="#plans">Plans</a>
+  <a href="https://mail.google.com/mail/u/0/?fs=1&to=support@dynacore.cloud&tf=cm">Support</a>
+</div>
 
-    <div class="content1">
-     <p>I'm WebStacks. Call me Web. I'm a Hobbyist Professional Programmer (Yeah, I'm proud to say that). I am a Web and API Developer. My goal is to help build a better, safer Internet. I am a Developer at DynaCore Cloud, a Hosting Company. I own AddCaptcha, a Web Security, bot-protection Enterprise. My other Hobbies include Stargazing and Literature Stuff. I occassionally write poems.</p>
-    </div>
-    <br><br>
+<div class="content1">
+  <div class="web-box1">
+  <h2>Dynacore Cloud</h2>
+  <a href="https://billing.dynacore.cloud" class="bun">Get Started</a>
+  </div>
+</div>
 
-    <center>
-      <br>
-      <br>
-      <div id="contact" class="foot">
-        <h5> &copy; 2023 All Rights Reserved By WebStacks </h5>
-        <a href="https://scratch.mit.edu/users/WebStacks"> <img style="height:35px;width:35px;padding:6px;"src="assets/scratch.png"></a>
-        <a href="https://mail.google.com/mail/u/0/?fs=1&to=ngweb500@gmail.com&tf=cm"> <img style="height:30px;width:30px;padding:12px"src="assets/gmail.svg"> </a>
-        <a href="https://www.instagram.com/web_nexgen/"> <img style="height:27px;width:27px;padding:12px"src="assets/instagram.png"></a>
-        <a href="https://github.com/WebStacks05"> <img style="height:35px;width:35px;padding:12px;border-radius:50px;"src="assets/github.png"></a>
-      <br><br>
+<div class="content2">
+<h2>Why DynaCore?</h2>
+<p>Count on DynaCore Cloud for rock-solid servers, lightning-fast performance, and exceptional support, all at a budget-friendly price. We're committed to keeping your online presence secure and always up and running, with a dedicated support team ready to assist you. Choose us for a seamless hosting experience that won't break the bank.</p>
+</div>
+
+<div class="content3">
+  <div id="cool-box" class="web-box2">
+    <img style="margin:45px;"src="assets/uptime.svg"/>
+    <h4>100% Uptime</h4>
+  </div>
+  <div class="web-box2">
+    <img style="margin:50px;"src="assets/secure.svg"/>
+    <h4>Secure</h4>
+  </div>
+  <div class="web-box2">
+    <img style="margin:50px;"src="assets/support.svg"/>
+    <h4>Friendly Suport</h4>
+  </div>
+</div>
+
+<div id="plans">
+  <h2>Our Plans</h2>
+  <div style="height:4px; width:90%; background-color: white;"></div>
+  <div class="container">
+  <div class="box">
+    <h3>Website Hosting</h3>
+    <ul>
+      <li>10 GB Disk Space</li>
+      <li>1TB Bandwith</li>
+      <li>SSL certificate</li>
+      <li>10 domains and 50 subdomains</li>
+      <li>Up to 25 Email and FTP accounts</li>
+      <li>Powerful hardware and an easy to use management panel.</li>
+    </ul>
+    <h4>$2 per Month</h4>
+  </div>
+  <div class="box">
+    <h3>VPS Hosting</h3>
+    <ul>
+      <li>1vCore Intel Xeon 26XX v2 CPU</li>
+      <li>SSL certificate</li>
+      <li>DDR4 RAM</li>
+      <li>25GB CEPH Storage</li>
+      <li>1TB traffic - 1Gb uplink</li>
+      <li>1 IPv4 & 1 /64 IPv6 subnet</li>
+      <li>Combahton DDoS Protection</li>
+    </ul>
+    <h4>$4 per Month</h4>
+  </div>
+  <div class="box">
+    <h3>Dedicated Hosting</h3>
+    <ul>
+      <li>Intel Xeon E5-2430L V2</li>
+      <li>SSL certificate</li>
+      <li>48GB DDR4 RAM</li>
+      <li>500 GB Disk Space</li>
+      <li>30TB Bandwith</li>
+      <li>1x IPv4 and 1x /64 IPv6 subnet included</li>
+      <li>Combahton DDoS Protection</li>
+    </ul>
+    <h4>$48 per Month</h4>
+  </div>
+  </div>
+  <a href="https://billing.dynacore.cloud" class="bun">Buy Now</a>
+</div>
+<br>
+
+<div class="Ctable">
+  <h2>See What you can Save.</h2>
+  <div class="overflow">
+  <table class="compare">
+    <tr>
+      <th>Company</th>
+      <th>Cores</th>
+      <th>RAM</th>
+      <th>Storage</th>
+      <th>Bandwidth</th>        
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>DynaCore</td>
+      <td>2</td>
+      <td>8GB DDR4</td>
+      <td>35GB + 0.05$ Per extra GB</td>
+      <td>Unmetered</td>
+      <td>$6 / Month</td>
+    </tr>
+    <tr>
+      <td>Hetzner</td>
+      <td>2</td>
+      <td>8GB DDR4</td>
+      <td>80GB</td>
+      <td>20TB</td>
+      <td>$12 / Month</td>
+    </tr>
+    <tr>
+      <td>AWS</td>
+      <td>2</td>
+      <td>8GB DDR4</td>
+      <td>30GB</td>
+      <td>Extra costs</td>
+      <td>$24 / Month</td>
+    </tr>
+    <tr>
+      <td>Google Cloud</td>
+      <td>2</td>
+      <td>8GB DDR4</td>
+      <td>Extra</td>
+      <td>Extra costs</td>
+      <td>$71 / Month</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<footer class="dark-footer">
+  <div class="footer-container">
+     <img class="hidden-mobile" src="assets/logo.png">
+      <div class="fc">
+          <h3>Navigation</h3>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
       </div>
-    </center>
+      <div class="fc">
+          <h3>Hosting</h3>
+          <ul>
+              <li><a href="https://billing.dynacore.cloud">Billing</a></li>
+              <li><a href="https://panel.dynacore.cloud">Dashboard</a></li>
+              <li><a href="https://control.dynacore.cloud">KVM Panel</a></li>
+          </ul>
+      </div>
+      <div class="fc">
+          <h3>Resources</h3>
+          <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Support</a></li>
+          </ul>
+      </div>
+      <img class="shown-mobile mob" src="assets/logo.png">
+  </div>
+  <div class="footer-bottom">
+      <div class="company-info">
+          <p>&copy; 2024 DynaCore Cloud</p>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
 
+<script async defer>
+window.onload = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function scrollDown() {
+    window.scrollBy(0, 900);
+  }
+</script>
 </body>
 </html>
